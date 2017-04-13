@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mdazizulhakim.phonebook">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutDev">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.AboutDev" />
+        </activity>
+        <activity android:name=".CreateContact">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.CreateContact" />
+        </activity>
+        <activity android:name=".EditContact">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.CreateContact" />
+        </activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactDetails">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.CreateContact" />
+        </activity>
+        <activity android:name=".Dialar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.Dialar" />
+        </activity>
+        <activity android:name=".Massenger">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mdazizulhakim.phonebook.Massenger" />
+        </activity>
+    </application>
+
+</manifest>

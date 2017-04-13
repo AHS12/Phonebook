@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mdazizulhakim.phonebook.MainActivity">
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About Developer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction = "never"/>
+    <item
+        android:id="@+id/action_Dial"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_call"
+        android:title="Dialer"
+        app:showAsAction="always"
+         />
+    <item
+        android:id="@+id/action_Msg"
+        android:orderInCategory="100"
+        android:title="Massenger"
+        android:icon="@drawable/ic_action_msg"
+        app:showAsAction="always"
+        />
+
+</menu>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_contact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mdazizulhakim.phonebook.CreateContact">
+
+    <Button
+        android:text="Save"
+        android:fontFamily="monospace"
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:background="@drawable/custom_border"
+        android:layout_marginLeft="116dp"
+        android:layout_marginStart="116dp"
+        android:layout_alignTop="@+id/etxt_email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="72dp" />
+
+    <TextView
+        android:text="Create a new Contact"
+        android:fontFamily="serif-monospace"
+        android:background="@drawable/border_text"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/etxt_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etxt_name"
+        android:cursorVisible="false"
+        android:hint="Enter Name*"
+        android:background="@drawable/border"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/etxt_phone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:cursorVisible="false"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etxt_email"
+        android:hint="Enter Email(Optional)"
+        android:background="@drawable/border"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:cursorVisible="false"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etxt_phone"
+        android:hint="Enter Phone Number*"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/border"
+        android:layout_above="@+id/btn_save"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="* Marked Fields Can Not Be Empty"
+        android:textColor="@android:color/black"
+        android:fontFamily="casual"
+        android:background="@drawable/border_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:id="@+id/textView3" />
+</RelativeLayout>
